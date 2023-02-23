@@ -26,7 +26,6 @@
   </script>
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @import url('./assets/fonts/static/Inter-Regular.ttf');
     @import url('./assets/fonts/static/Inter-Bold.ttf');
@@ -34,146 +33,108 @@
   </style>
 </head>
 <body class="font-inter">
-  <div id="mobile-menu" class="hidden w-3/4 align-stretch z-10 bg-white h-full fixed top-0 right-0 ease-in duration-1000">
-    <div class="text-base lg:flex-grow">
-      <img id="menu-close" class="hidden mt-8 ml-auto h-6 w-6 cursor-pointer flex justify-self mr-6" src="./assets/images/icon-menu-close.svg" alt="">
-      <a href="#responsive-header" class="block mt-12 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-        Home
-      </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-        New
-      </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-        Popular
-      </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-        Trending
-      </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed ml-5">
-        Categories
-      </a>
-    </div>
-  </div>
-  <div class="container-fluid md:px-[10rem] px-5">
-    <nav class="flex items-center justify-between flex-wrap h-[50px] w-full my-5">
-      <div class="flex h-[32px]">
-        <img class="h-[32px]" src="./assets/images/logo.svg" alt="" width="52" height="32">
-      </div>
-      <img id="menu-button" class="lg:hidden h-6 w-6 cursor-pointer block" src="./assets/images/icon-menu.svg" alt="">
-      <div id="menu" class="lg:w-auto w-full align-stretch hidden lg:flex z-10 bg-white">
-        <div class="text-base lg:flex-grow">
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-            Home
-          </a>
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-            New
-          </a>
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-            Popular
-          </a>
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
-            Trending
-          </a>
-          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed ml-5">
-            Categories
-          </a>
-        </div>
-      </div>
-    </nav>
-    <div class="grid lg:grid-cols-3 grid-cols-1 flex gap-8 mb-10">
-      <div class="lg:col-span-2">
-        <div><img src="./assets/images/image-web-3-desktop.jpg" alt=""></div>
-        <div class="grid lg:grid-cols-2 grid-cols-1 flex gap-8 mt-5">
-          <div class="col-span-1">
-            <span class="text-darkBlue text-5xl font-extrabold">The Bright Future of Web 3.0?</span>
-          </div>
-          <div class="col-span-1">
-            <span class="text-darkGrayishBlue text-base">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</span>
-            <button class="mt-5 flex text-sm px-5 py-2 text-white bg-softRed tracking-wide hover:bg-darkBlue hover:text-white">READ MORE</button>
-          </div>
-        </div>
-      </div>
-      <div class="bg-darkBlue text-white pl-6 py-6 pr-6">
-        <div class="w-full flex border-b-[1px] border-b-grayishBlue flex-wrap">
-          <span class="w-full text-softOrange font-extrabold text-3xl pb-4">New</span>
-          <span class="w-full text-lg font-extrabold text-white py-2 hover:text-softOrange">Hydrogen VS Electric Cars</span>
-          <span class="w-full text-base text-grayishBlue pb-5">Will hydrogen-fueled cars ever catch up to EVs?</span>
-        </div>
-        <div class="w-full flex border-b-[1px] border-b-grayishBlue flex-wrap py-2">
-          <span class="w-full text-lg font-extrabold text-white pb-2 pt-4 hover:text-softOrange">The Downsides of AI Artistry</span>
-          <span class="w-full text-base text-grayishBlue pb-5">What are the possible adverse effects of on-demand AI image generation?</span>
-        </div>
-        <div class="w-full flex flex-wrap py-2">
-          <span class="w-full text-lg font-extrabold text-white pb-2 pt-4 hover:text-softOrange">Is VC Funding Drying Up?</span>
-          <span class="w-full text-base text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
-        </div>
-      </div>
-      <div class="grid grid-cols-3 flex gap-5">
-        <img class="col-span-1" src="./assets/images/image-retro-pcs.jpg" alt="">
-        <div class="col-span-2">
-          <span class="text-3xl font-bold text-grayishBlue tracking-widest">01</span>
-          <span class="text-base cursor-pointer hover:text-softRed flex font-extrabold text-darkBlue py-2">Reviving Retro PCs</span>
-          <span class="flex text-base text-darkGrayishBlue">What happens when old PCs are given modern upgrades?</span>
-        </div>
-      </div>
-      <div class="grid grid-cols-3 flex gap-5">
-        <img class="col-span-1" src="./assets/images/image-top-laptops.jpg" alt="">
-        <div class="col-span-2">
-          <span class="text-3xl font-bold text-grayishBlue tracking-widest">02</span>
-          <span class="text-base cursor-pointer hover:text-softRed flex font-extrabold text-darkBlue py-2">Top 10 Laptops of 2022</span>
-          <span class="flex text-base text-darkGrayishBlue">Our best picks for various needs and budgets.</span>
-        </div>
-      </div>
-      <div class="grid grid-cols-3 flex gap-5">
-        <img class="col-span-1" src="./assets/images/image-gaming-growth.jpg" alt="">
-        <div class="col-span-2">
-          <span class="text-3xl font-bold text-grayishBlue tracking-widest">03</span>
-          <span class="text-base cursor-pointer hover:text-softRed flex font-extrabold text-darkBlue py-2">The Growth of Gaming</span>
-          <span class="flex text-base text-darkGrayishBlue">How the pandemic has sparked fresh opportunities.</span>
-        </div>
+  <main>
+    <div id="mobile-menu" class="hidden w-3/4 align-stretch z-10 bg-white h-full fixed top-0 right-0 ease-in duration-1000">
+      <div class="text-base lg:flex-grow">
+        <img id="menu-close" class="hidden mt-8 ml-auto h-6 w-6 cursor-pointer flex justify-self mr-6" src="./assets/images/icon-menu-close.svg" alt="menu close">
+        <a href="#responsive-header" class="block mt-12 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+          Home
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+          New
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+          Popular
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+          Trending
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed ml-5">
+          Categories
+        </a>
       </div>
     </div>
-  </div>
-  <!-- Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation? -->
-
-  <!-- Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities. -->
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    <div class="container-fluid md:px-[10rem] px-5">
+      <nav class="flex items-center justify-between flex-wrap h-[50px] w-full my-5">
+        <div class="flex h-[32px]">
+          <img class="h-[32px]" src="./assets/images/logo.svg" alt="logo" width="52" height="32">
+        </div>
+        <img id="menu-button" class="lg:hidden h-6 w-6 cursor-pointer block" src="./assets/images/icon-menu.svg" alt="menu">
+        <div id="menu" class="lg:w-auto w-full align-stretch hidden lg:flex z-10 bg-white">
+          <div class="text-base lg:flex-grow">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+              Home
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+              New
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+              Popular
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed mx-5">
+              Trending
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-darkGrayishBlue hover:text-softRed ml-5">
+              Categories
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="grid lg:grid-cols-3 grid-cols-1 flex gap-8 mb-10">
+        <div class="lg:col-span-2">
+          <div><img src="./assets/images/image-web-3-desktop.jpg" alt="desktop"></div>
+          <div class="grid lg:grid-cols-2 grid-cols-1 flex gap-8 mt-5">
+            <div class="col-span-1">
+              <span class="text-darkBlue text-5xl font-extrabold">The Bright Future of Web 3.0?</span>
+            </div>
+            <div class="col-span-1">
+              <span class="text-darkGrayishBlue text-base">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</span>
+              <button class="mt-5 flex text-sm px-5 py-2 text-white bg-softRed tracking-wide hover:bg-darkBlue hover:text-white">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-darkBlue text-white pl-6 py-6 pr-6">
+          <div class="w-full flex border-b-[1px] border-b-grayishBlue flex-wrap">
+            <span class="w-full text-softOrange font-extrabold text-3xl pb-4">New</span>
+            <span class="w-full text-lg font-extrabold text-white py-2 hover:text-softOrange">Hydrogen VS Electric Cars</span>
+            <span class="w-full text-base text-grayishBlue pb-5">Will hydrogen-fueled cars ever catch up to EVs?</span>
+          </div>
+          <div class="w-full flex border-b-[1px] border-b-grayishBlue flex-wrap py-2">
+            <span class="w-full text-lg font-extrabold text-white pb-2 pt-4 hover:text-softOrange">The Downsides of AI Artistry</span>
+            <span class="w-full text-base text-grayishBlue pb-5">What are the possible adverse effects of on-demand AI image generation?</span>
+          </div>
+          <div class="w-full flex flex-wrap py-2">
+            <span class="w-full text-lg font-extrabold text-white pb-2 pt-4 hover:text-softOrange">Is VC Funding Drying Up?</span>
+            <span class="w-full text-base text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 flex gap-5">
+          <img class="col-span-1" src="./assets/images/image-retro-pcs.jpg" alt="retro pcs">
+          <div class="col-span-2">
+            <span class="text-3xl font-bold text-grayishBlue tracking-widest">01</span>
+            <span class="text-base cursor-pointer hover:text-softRed flex font-extrabold text-darkBlue py-2">Reviving Retro PCs</span>
+            <span class="flex text-base text-darkGrayishBlue">What happens when old PCs are given modern upgrades?</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 flex gap-5">
+          <img class="col-span-1" src="./assets/images/image-top-laptops.jpg" alt="top laptops">
+          <div class="col-span-2">
+            <span class="text-3xl font-bold text-grayishBlue tracking-widest">02</span>
+            <span class="text-base cursor-pointer hover:text-softRed flex font-extrabold text-darkBlue py-2">Top 10 Laptops of 2022</span>
+            <span class="flex text-base text-darkGrayishBlue">Our best picks for various needs and budgets.</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 flex gap-5">
+          <img class="col-span-1" src="./assets/images/image-gaming-growth.jpg" alt="gaming growth ">
+          <div class="col-span-2">
+            <span class="text-3xl font-bold text-grayishBlue tracking-widest">03</span>
+            <span class="text-base cursor-pointer hover:text-softRed flex font-extrabold text-darkBlue py-2">The Growth of Gaming</span>
+            <span class="flex text-base text-darkGrayishBlue">How the pandemic has sparked fresh opportunities.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="./index.js"></script>
 </body>
 </html>
